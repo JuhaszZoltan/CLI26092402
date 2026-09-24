@@ -1,6 +1,9 @@
-﻿//https://git-scm.com/
+﻿// https://git-scm.com/
 
-string hw = "Hello, World!";
+Console.Write("enter your name here: ");
+string name = Console.ReadLine() ?? throw new Exception("cannot be null");
+
+string hw = $"Hello, {name}!";
 
 foreach (var c in hw)
 {
